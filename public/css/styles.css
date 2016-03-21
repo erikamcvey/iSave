@@ -1,0 +1,179 @@
+html, body {
+    background-color: #eee;
+    height: 100%;
+}
+
+
+.container {
+    margin: 0px;
+    width: 100%;
+}
+
+.full-height {
+    height: 100%;
+}
+
+h1, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+p, a, h5 {
+    font-family: 'Hind', sans-serif;
+}
+
+.affix {
+    top: 75px;
+}
+
+header {
+    width: 100%;
+    height: 150px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background: url(http://cache4.asset-cache.net/xc/478187226.jpg?v=2&c=IWSAsset&k=2&d=OVMPj9UIW4P3wkWsuUSWD5LWtXB3CNL7WX3JyfgMPWuSh6sYMtKBAywPM3cRCDxp0) repeat top fixed;
+    background-size: cover;
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    -ms-transition: height 0.3s;
+    -o-transition: height 0.3s;
+    transition: height 0.3s;
+}
+header .isave {
+    height: 150px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    font-size: 100px;
+    color: #26734d;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+header.smaller {
+    height: 75px;
+}
+header.smaller .isave {
+    height: 75px;
+    margin: 0px;
+    font-size: 60px;
+}
+
+.offset-row {
+    position: absolute;
+    top: 150px;
+    height: 100%;
+    width: 100%;
+}
+
+#budget .good, #habits .good {
+    color: #26734d;
+}
+
+#budget .bad, #habits .bad {
+    color: #b30000;
+}
+
+#budget .warningProg {
+    background-color: #e6b800;
+}
+#goals .goodProg, #budget .goodProg {
+    background-color: #26734d;
+}
+#budget .badProg {
+    background-color: #b30000;
+}
+
+#budget .progress {
+    background-color: #d9d9d9;
+    margin: 0px;
+}
+
+#budget{
+    width: 50%;
+}
+
+#budget p {
+    margin: 0px;
+}
+
+#goals {
+    width: 50%;
+}
+
+#budget, #goals, #habits {
+    padding: 20px;
+}
+
+.progress-report {
+    display: inline;
+}
+
+.time-left {
+    margin: 3px;
+}
+
+.nav-side-menu {
+    overflow: auto;
+    font-family: 'Hind', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    color: #1a1a1a;
+    background-color: #26734d;
+    width: 240px;
+    height: 100%;
+    padding: 0px;
+    margin-left: -15px;
+}
+.nav-side-menu .menu-title {
+    color: #1a1a1a;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #26734d;
+    line-height: 50px;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+.nav-side-menu ul,
+.nav-side-menu li {
+    list-style: none;
+    border-bottom: #1a1a1a solid 1px;
+    padding: 0px;
+    margin: 0px;
+    line-height: 35px;
+    cursor: pointer;
+}
+
+.nav-side-menu ul .active,
+.nav-side-menu li .active {
+    background-color: #79d279;
+}
+
+.nav-side-menu li a {
+    padding-left: 20px;
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+.nav-side-menu .sub-menu li a {
+    padding: 40px;
+}
+
+.nav-side-menu li:hover,
+.nav-side-menu ul .sub-menu li:hover,
+.nav-side-menu li .sub-menu li:hover{
+    background-color: #79d279;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.nav-side-menu .menu-list .menu-content {
+    display: block;
+}

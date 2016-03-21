@@ -1,0 +1,34 @@
+<div class="row">
+    <div class="main">
+        <h1 class="text-center page-header">Bank Information</h1>
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="bank" class="col-sm-2 control-label">Bank Branch</label>
+                <select id="bank" class="col-sm-9">
+                    <option value="def">Please Choose One...</option>
+                    <option value="boa">Bank of America</option>
+                    <option value="wf">Wells Fargo</option>
+                    <option value="td">TD Bank</option>
+                    <option value="st">Santander</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="actnum" class="col-sm-2 control-label">Account Number</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="actnum" placeholder="Account Number">
+                    <button type="button" class="btn" data-toggle="popover" data-trigger="hover" title="Account Number"
+                            data-content="This is the number associated with your bank account. It can be found
+                            on a check or on your online banking portal.">
+                        <span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span>
+                    </button>
+                </div>
+            </div>
+            <br><br>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <a href="#/createbudget" class="btn btn-primary pull-right">Next</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

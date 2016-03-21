@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="iSaveApp">
+<head>
+    <title>iSave</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <!--Bootstrap CDN-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--Angular CDNs-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.0/angular-route.js"></script>
+    <!--Our app, route configurations-->
+    <script src="app.js"></script>
+    <script src="config.js"></script>
+    <!--our controllers and services-->
+    <script src="views/main.controller.js"></script>
+    <script src="views/login.controller.js"></script>
+    <script src="views/register/register.controller.js"></script>
+    <script src="services/user.service.client.js"></script>
+    <!--our CSS-->
+    <link href="css/styles.css" rel="stylesheet">
+    <!--our js-->
+    <script src="js/script.js"></script>
+    <!--our fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+</head>
+
+<body ng-controller="MainController">
+<div class="container full-height">
+    <div class="row">
+        <header>
+            <h1 class="isave">iSave</h1>
+        </header>
+    </div>
+    <div class="row offset-row">
+        <div class="col-md-3 full-height">
+        <div class="nav-side-menu" data-spy="affix" data-offset-top="75">
+            <div class="menu-title">MENU</div>
+            <div class="menu-list">
+
+                <ul id="menu-content" class="menu-content collapse out">
+                    <li ng-show="!currentUser" ng-class="{'active': $location.path() === '/'}"><a href="#/">LOGIN</a></li>
+                    <li ng-show="!currentUser" ng-class="{'active': $location.path() === '/register'}"><a href="#/register">REGISTER</a></li>
+                    <li ng-show="currentUser" ng-class="{'active': $location.path() === '/home'}"><a href="#/home">HOME</a></li>
+                    <li ng-show="currentUser" ng-class="{'active': $location.path() === '/profile'}"><a href="#/profile">PROFILE</a></li>
+                    <li ng-show="currentUser" ng-class="{'active': $location.path() === '/budget'}"><a href="#/budget">BUDGET</a></li>
+                    <li ng-show="currentUser" ng-class="{'active': $location.path() === '/goal'}"
+                        data-toggle="collapse" data-target="#goals-menu" class="collapsed">
+                        <a href="#/goals">GOALS<span class="caret"></span></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="goals-menu">
+                        <li ng-class="{'active': $location.path() === '/newgoal'}"><a href="#/newgoal">NEW</a></li>
+                        <li ng-class="{'active': $location.path() === '/goals'}"><a href="#/goals">CURRENT</a></li>
+                        <li ng-class="{'active': $location.path() === '/prevgoal'}"><a href="#/prevgoal">PREVIOUS</a></li>
+                    </ul>
+
+                    <li ng-show="currentUser" ng-class="{'active': $location.path() === '/habits'}"
+                        data-toggle="collapse" data-target="#habits-menu" class="collapsed">
+                        <a href="#/habits">HABITS <span class="caret"></span></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="habits-menu">
+                        <li ng-class="{'active': $location.path() === '/newhabit'}"><a href="#/newhabit">NEW</a></li>
+                        <li ng-class="{'active': $location.path() === '/habits'}"><a href="#/habits">CURRENT</a></li>
+                        <li ng-class="{'active': $location.path() === '/prevhabit'}"><a href="#/prevhabit">PREVIOUS</a></li>
+                    </ul>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="col-md-8" ng-view></div>
+    </div>
+</div>
+
+<!--<div class="container" ng-show="!currentUser" ng-include="'views/login.view.html'">-->
+</div>
+</body>
+</html>
