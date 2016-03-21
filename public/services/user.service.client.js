@@ -24,7 +24,6 @@
         return services;
 
         function findUserByCredentials(username, password, callback) {
-            console.log('yeah...');
             for (var u = 0; u < services.users.length; u++) {
                 var user = services.users[u];
                 if (user.username === username &&

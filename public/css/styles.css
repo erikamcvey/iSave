@@ -88,10 +88,30 @@ header.smaller .isave {
     background-color: #b30000;
 }
 
+.progress {
+    background-color: #d9d9d9;
+    border-radius: 0px;
+    border-left: #eee solid 1px;
+    border-right: #eee solid 1px;
+    height: 25px;
+    padding: 0px;
+}
+
 #budget .progress {
     background-color: #d9d9d9;
     margin: 0px;
 }
+
+.tracker-not-done {
+    color: #1a1a1a;
+    background-color: #d9d9d9;
+}
+
+.tracker-done {
+    color: #fff;
+    background-color: #26734d;
+}
+
 
 #budget{
     width: 50%;

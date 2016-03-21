@@ -23,7 +23,8 @@
                 templateUrl: "views/register/bank.view.html"
             })
             .when("/createbudget", {
-                templateUrl: "views/register/createbudget.view.html"
+                templateUrl: "views/register/createbudget.view.html",
+                controller: "RegisterController"
             })
             .when("/home", {
                 templateUrl: "views/home.view.html"

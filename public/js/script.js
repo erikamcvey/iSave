@@ -11,8 +11,6 @@ function init() {
             }
         }
     });
-}
-$(document).ready(function(){
     $('[data-toggle="popover"]').popover();
-});
+}
 window.onload = init();
