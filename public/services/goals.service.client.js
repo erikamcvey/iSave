@@ -14,7 +14,7 @@
             { "_id":2, "name":"Paris", "descr":"Travel to Paris", "amount":3000,
                 "date":new Date(), "completed":true},
             { "_id":3, "name":"Coldplay", "descr":"Go to coldplay concert", "amount":200,
-                "date":new Date(), "completed":false}
+                "date":new Date(), "completed":true}
         ];
         var api = {
             goals: goals,
