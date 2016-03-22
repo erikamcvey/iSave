@@ -40,7 +40,7 @@
             })
             .when("/newgoal", {
                 templateUrl: "views/goals/newgoal.view.html",
-                controller: "GoalController"
+                controller: "CurrentGoalController"
             })
             .when("/prevgoals", {
                 templateUrl: "views/goals/prevgoals.view.html"
