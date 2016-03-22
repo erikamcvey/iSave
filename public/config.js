@@ -39,7 +39,8 @@
                 templateUrl: "views/goals/goals.view.html"
             })
             .when("/newgoal", {
-                templateUrl: "views/goals/newgoal.view.html"
+                templateUrl: "views/goals/newgoal.view.html",
+                controller: "GoalController"
             })
             .when("/prevgoals", {
                 templateUrl: "views/goals/prevgoals.view.html"
