@@ -7,7 +7,7 @@
         .module("iSaveApp")
         .factory("GoalService", GoalService);
 
-    function GoalService(){
+    function GoalService($rootScope){
         var goals = [
             { "_id":1, "name":"Car", "descr":"Purchase new car", "amount":5000,
                 "date":new Date(), "completed":true, "notes":"", "link":""},
@@ -20,6 +20,7 @@
             goals: goals,
             //getCompletedGoals: getCompletedGoals,
             getCurrentGoals: getCurrentGoals,
+            setCurrentGoal: setCurrentGoal,
             createGoal:  createGoal,
             //deleteGoal: deleteGoal,
             //updategoal: updategoal
@@ -40,6 +41,10 @@
                     return api.goals[goal];
                 }
             }
+        }
+
+        function setCurrentGoal(goal) {
+            $rootScope.currentGoal= goal;
         }
     }
 })();

@@ -9,6 +9,7 @@
 
     function CurrentGoalController($scope, $rootScope, $location, GoalService) {
         $scope.createGoal=createGoal;
+        $scope.goal= GoalService.getCurrentGoals();
 
         function createGoal(goal) {
             console.log(goal);
