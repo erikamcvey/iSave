@@ -71,6 +71,8 @@
                         <li ng-class="{'active': $location.path() === '/habits'}"><a href="#/habits">CURRENT</a></li>
                         <li ng-class="{'active': $location.path() === '/prevhabit'}"><a href="#/prevhabit">PREVIOUS</a></li>
                     </ul>
+                    <li ng-show="currentUser" ng-click="logout()"><a href="#/">LOGOUT</a></li>
+
                 </ul>
             </div>
         </div>
