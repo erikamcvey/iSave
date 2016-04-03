@@ -4,7 +4,7 @@
         .module("iSaveApp")
         .factory("UserService", UserService);
 
-    function UserService(){
+    function UserService($rootScope){
         var users = [
             { "_id":1, "firstName":"Hermione", "lastName":"Granger", "username":"smartgirl",
                 "password":"leviosa", "role":"user", zip:"12345" },
@@ -19,7 +19,8 @@
             findAllUsers: findAllUsers,
             createUser: createUser,
             deleteUserById: deleteUserById,
-            updateUser: updateUser
+            updateUser: updateUser,
+            logoutUser: logoutUser
         };
         return services;
 
@@ -64,6 +65,10 @@
                     callback(curUser);
                 }
             }
+        }
+
+        function logoutUser() {
+            $rootScope.currentUser = null;
         }
     }
 })();

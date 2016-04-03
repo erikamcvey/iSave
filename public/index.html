@@ -52,25 +52,29 @@
                     <li ng-show="currentUser" ng-class="{'active': $location.path() === '/home'}"><a href="#/home">HOME</a></li>
                     <li ng-show="currentUser" ng-class="{'active': $location.path() === '/profile'}"><a href="#/profile">PROFILE</a></li>
                     <li ng-show="currentUser" ng-class="{'active': $location.path() === '/budget'}"><a href="#/budget">BUDGET</a></li>
-                    <li ng-show="currentUser" ng-class="{'active': $location.path() === '/goal'}"
+                    <li ng-show="currentUser" ng-class="{'active': $location.path() === '/goals' ||
+                    $location.path() === '/newgoal' || $location.path() === '/prevgoals'}"
                         data-toggle="collapse" data-target="#goals-menu" class="collapsed">
                         <a href="#/goals">GOALS<span class="caret"></span></a>
                     </li>
                     <ul class="sub-menu collapse" id="goals-menu">
                         <li ng-class="{'active': $location.path() === '/newgoal'}"><a href="#/newgoal">NEW</a></li>
                         <li ng-class="{'active': $location.path() === '/goals'}"><a href="#/goals">CURRENT</a></li>
-                        <li ng-class="{'active': $location.path() === '/prevgoal'}"><a href="#/prevgoals">PREVIOUS</a></li>
+                        <li ng-class="{'active': $location.path() === '/prevgoals'}"><a href="#/prevgoals">PREVIOUS</a></li>
                     </ul>
 
-                    <li ng-show="currentUser" ng-class="{'active': $location.path() === '/habits'}"
+                    <li ng-show="currentUser" ng-class="{'active': $location.path() === '/habits' ||
+                    $location.path() === '/newhabit' || $location.path() === '/prevhabits'}"
                         data-toggle="collapse" data-target="#habits-menu" class="collapsed">
                         <a href="#/habits">HABITS <span class="caret"></span></a>
                     </li>
                     <ul class="sub-menu collapse" id="habits-menu">
                         <li ng-class="{'active': $location.path() === '/newhabit'}"><a href="#/newhabit">NEW</a></li>
                         <li ng-class="{'active': $location.path() === '/habits'}"><a href="#/habits">CURRENT</a></li>
-                        <li ng-class="{'active': $location.path() === '/prevhabit'}"><a href="#/prevhabit">PREVIOUS</a></li>
+                        <li ng-class="{'active': $location.path() === '/prevhabits'}"><a href="#/prevhabits">PREVIOUS</a></li>
                     </ul>
+                    <li ng-show="currentUser" ng-click="logout()"><a href="#/">LOGOUT</a></li>
+
                 </ul>
             </div>
         </div>

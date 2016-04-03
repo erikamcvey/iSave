@@ -168,6 +168,10 @@ header.smaller .isave {
     cursor: pointer;
 }
 
+.sub-menu li {
+    line-height: 25px;
+}
+
 .nav-side-menu ul .active,
 .nav-side-menu li .active {
     background-color: #79d279;
@@ -181,6 +185,7 @@ header.smaller .isave {
 
 .nav-side-menu .sub-menu li a {
     padding: 40px;
+    font-size: 14px;
 }
 
 .nav-side-menu li:hover,
