@@ -16,7 +16,6 @@
                 setForms();
                 $scope.editForm = {"title": res.title, "_id": res._id, "userId": res.userId};
             });
-
         }
 
         function deleteForm(formId, formIndex) {

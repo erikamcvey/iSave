@@ -8,10 +8,18 @@
         $scope.completeReg = completeReg;
 
         function register(user) {
-            UserService.createUser(user, function(res) {
+            if (user==undefined ||
+                user.username == undefined ||
+                user.password == undefined ||
+                user.password2 == undefined ||
+                user.email == undefined)
+                alert('Fill Out All Fields');
+            else {
+            UserService.createUser(user, function (res) {
                 $rootScope.registeringUser = user;
                 $location.url("/confirm");
             });
+        }
         }
 
         function completeReg() {
