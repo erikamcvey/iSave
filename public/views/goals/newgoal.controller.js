@@ -13,8 +13,15 @@
         function createGoal(goal) {
             console.log(goal);
 
-            GoalService.createGoal(goal);
-            $location.url("/goals");
+            if (goal == undefined || goal.amount == undefined || goal.date == undefined) {
+                alert('Fill In All Required Fields');
+            }
+            else {
+
+                GoalService.createGoal(goal);
+                $location.url("/goals");
+            }
+
 
         }
     }

@@ -202,3 +202,7 @@ header.smaller .isave {
 .nav-side-menu .menu-list .menu-content {
     display: block;
 }
+
+.form-group.required .control-label:after {
+    color: #d00;
+}
