@@ -10,11 +10,11 @@
     function GoalService(){
         var goals = [
             { "_id":1, "name":"Car", "descr":"Purchase new car", "amount":5000,
-                "date":new Date(), "completed":false},
+                "date":new Date(), "completed":false, "notes":"", "link":""},
             { "_id":2, "name":"Paris", "descr":"Travel to Paris", "amount":3000,
-                "date":new Date(), "completed":true},
+                "date":new Date(), "completed":true, "notes":"", "link":""},
             { "_id":3, "name":"Coldplay", "descr":"Go to coldplay concert", "amount":200,
-                "date":new Date(), "completed":true}
+                "date":new Date(), "completed":true, "notes":"", "link":""}
         ];
         var api = {
             goals: goals,

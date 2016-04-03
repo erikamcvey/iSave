@@ -34,6 +34,25 @@
                 </div>
             </div>
             <div class="form-group">
+                <label for="link" class="col-sm-2 control-label">Link</label>
+                <div class="col-sm-10">
+                    <input ng-model="goal.link"  type="text" class="form-control" id="link">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="notes" class="col-sm-2 control-label">Notes</label>
+                <div class="col-sm-10">
+                    <textarea ng-model="goal.notes"  type="text" class="form-control" rows="2" id="notes"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputFile" class="col-sm-2 control-label">Image</label>
+                <div class="col-sm-10">
+                    <input ng.model="goal.image" type="file" id="exampleInputFile">
+                </div>
+            </div>
+
+            <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
                     <button ng-click="createGoal(goal)" type="submit" class="btn btn-default">Create</button>
                     <button onclick="location.href='#/home'" type="cancel" class="btn btn-default">Cancel</button>
