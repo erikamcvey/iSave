@@ -10,7 +10,7 @@
     function GoalService(){
         var goals = [
             { "_id":1, "name":"Car", "descr":"Purchase new car", "amount":5000,
-                "date":new Date(), "completed":false, "notes":"", "link":""},
+                "date":new Date(), "completed":true, "notes":"", "link":""},
             { "_id":2, "name":"Paris", "descr":"Travel to Paris", "amount":3000,
                 "date":new Date(), "completed":true, "notes":"", "link":""},
             { "_id":3, "name":"Coldplay", "descr":"Go to coldplay concert", "amount":200,
@@ -19,7 +19,7 @@
         var api = {
             goals: goals,
             //getCompletedGoals: getCompletedGoals,
-           //getCurrentGoals: getCurrentGoals,
+            getCurrentGoals: getCurrentGoals,
             createGoal:  createGoal,
             //deleteGoal: deleteGoal,
             //updategoal: updategoal
@@ -34,6 +34,12 @@
             //callback(goal);
         }
 
-
+        function getCurrentGoals() {
+            for (var goal in api.goals) {
+                if (api.goals[goal].completed === false) {
+                    return api.goals[goal];
+                }
+            }
+        }
     }
 })();

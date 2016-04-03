@@ -5,10 +5,12 @@
 (function(){
     angular
         .module("iSaveApp")
-        .controller("CurrentGoalController", CurrentGoalController);
+        .controller("GoalController", GoalController);
 
-    function CurrentGoalController($scope, $rootScope, $location, GoalService) {
+    function GoalController($scope, $rootScope, $location, GoalService) {
         $scope.createGoal=createGoal;
+        $scope.goal = GoalService.getCurrentGoals();
+        console.log($scope.goal);
 
         function createGoal(goal) {
             console.log(goal);
@@ -23,3 +25,6 @@
         }
     }
 })();
+/**
+ * Created by rachanadeshmukh on 4/3/16.
+ */
