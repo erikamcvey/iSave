@@ -17,7 +17,6 @@
                 alert('Fill In All Required Fields');
             }
             else {
-
                 GoalService.createGoal(goal);
                 $location.url("/goals");
             }

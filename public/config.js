@@ -51,8 +51,5 @@
             .when("/newhabit", {
                 templateUrl: "views/habits/newhabit.view.html"
             })
-            .when("/prevhabits", {
-                templateUrl: "views/habits/prevhabits.view.html"
-            })
     }
 })();
