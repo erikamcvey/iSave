@@ -48,10 +48,12 @@
                 templateUrl: "views/goals/prevgoals.view.html"
             })
             .when("/habits", {
-                templateUrl: "views/habits/habits.view.html"
+                templateUrl: "views/habits/habits.view.html",
+                controller: "HabitController"
             })
             .when("/newhabit", {
-                templateUrl: "views/habits/newhabit.view.html"
+                templateUrl: "views/habits/newhabit.view.html",
+                controller: "CurrentHabitController"
             })
     }
 })();

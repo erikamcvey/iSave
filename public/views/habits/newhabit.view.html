@@ -1,23 +1,24 @@
 <div class="main">
     <div class="col-md-9 col-md-offset-1 main">
         <h1 class="page-header">New Habit</h1>
+        <p><i>* = Required</i></p>
 
         <form class="form-horizontal">
             <div class="form-group">
-                <label for="inputnname" class="col-sm-2 control-label">Name</label>
+                <label for="inputnname" class="col-sm-2 control-label">Name *</label>
                 <div class="col-sm-10">
-                    <input ng-model="goal.name"  class="form-control" id="inputnname">
+                    <input ng-model="habit.name"  class="form-control" id="inputnname">
                 </div>
             </div>
             <div class="form-group">
                 <label for="inputdescr" class="col-sm-2 control-label">Description</label>
                 <div class="col-sm-10">
-                    <textarea ng-model="goal.descr" type="text" class="form-control" rows="3" id="inputdescr"></textarea>
+                    <textarea ng-model="habit.descr" type="text" class="form-control" rows="3" id="inputdescr"></textarea>
                 </div>
             </div>
 
             <div class="form-group">
-                <label for="inputamount" class="col-sm-2 control-label">Amount</label>
+                <label for="inputamount" class="col-sm-2 control-label">Amount *</label>
                 <div class="col-sm-10">
                     <div class="input-group" id="inputamount">
                         <!-- <input ng-model="goal.amount" type="text" class="form-control" id="inputamount"> -->
@@ -42,7 +43,7 @@
 
             <div class="form-group">
                 <div class="col-sm-offset-2 col-sm-10">
-                    <button ng-click="createGoal(goal)" type="submit" class="btn btn-default">Create</button>
+                    <button ng-click="createHabit(habit)" type="submit" class="btn btn-default">Create</button>
                     <button onclick="location.href='#/home'" type="cancel" class="btn btn-default">Cancel</button>
                 </div>
             </div>
