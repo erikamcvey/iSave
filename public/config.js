@@ -30,7 +30,8 @@
                 templateUrl: "views/home.view.html"
             })
             .when("/profile", {
-                templateUrl: "views/profile.view.html"
+                templateUrl: "views/profile.view.html",
+                controller: "ProfileController"
             })
             .when("/budget", {
                 templateUrl: "views/budget.view.html"

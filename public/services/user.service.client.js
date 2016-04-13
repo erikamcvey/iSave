@@ -7,11 +7,11 @@
     function UserService($rootScope){
         var users = [
             { "_id":1, "firstName":"Hermione", "lastName":"Granger", "username":"smartgirl",
-                "password":"leviosa", "role":"user", zip:"12345" },
+                "password":"leviosa", "role":"user", bank:"1234567" },
             { "_id":2, "firstName":"Harry", "lastName":"Potter", "username":"chosenone",
-                "password":"hedwig", "role":"user", zip:"67891" },
+                "password":"hedwig", "role":"user", bank:"9854321" },
             { "_id":3, "firstName":"Ron", "lastName":"Weasley", "username":"redhead",
-                "password":"keeper", "role":"advertiser", zip:"54321" }
+                "password":"keeper", "role":"advertiser", bank:"1928374" }
         ];
         var services = {
             users: users,
