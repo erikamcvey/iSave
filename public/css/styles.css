@@ -142,7 +142,7 @@ header.smaller .isave {
     font-family: 'Hind', sans-serif;
     font-weight: bold;
     font-size: 18px;
-    color: #1a1a1a;
+    color: #ffffff;
     background-color: #26734d;
     width: 240px;
     height: 100%;
@@ -150,7 +150,7 @@ header.smaller .isave {
     margin-left: -15px;
 }
 .nav-side-menu .menu-title {
-    color: #1a1a1a;
+    color: #f2f2f2;
     font-family: 'Montserrat', sans-serif;
     background-color: #26734d;
     line-height: 50px;
@@ -161,13 +161,14 @@ header.smaller .isave {
 .nav-side-menu ul,
 .nav-side-menu li {
     list-style: none;
-    border-bottom: #1a1a1a solid 1px;
     padding: 0px;
     margin: 0px;
     line-height: 35px;
     cursor: pointer;
 }
-
+.nav-side-menu li {
+    border-bottom: #1a1a1a solid 2px;
+}
 .sub-menu li {
     line-height: 25px;
 }
@@ -180,7 +181,7 @@ header.smaller .isave {
 .nav-side-menu li a {
     padding-left: 20px;
     text-decoration: none;
-    color: #1a1a1a;
+    color: #f2f2f2;
 }
 
 .nav-side-menu .sub-menu li a {
