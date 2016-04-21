@@ -17,6 +17,7 @@
             else {
             UserService.createUser(user, function (res) {
                 $rootScope.registeringUser = user;
+                $rootScope.currentUser = $rootScope.registeringUser;
                 $location.url("/confirm");
             });
         }

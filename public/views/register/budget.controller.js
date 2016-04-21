@@ -16,5 +16,10 @@
                 $scope.budget = res;
             });
         }
+
+        function completeReg() {
+
+            $location.url("/home");
+        }
     }
 })();
