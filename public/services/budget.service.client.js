@@ -8,17 +8,15 @@
 
         var service = {
             createBudget: createBudget,
-            usersBudget: usersBudget,
-            editBudget: editBudget
+            usersBudget: usersBudget
         };
 
         return service;
 
-        function createBudget(userId, item, callback) {
+        function createBudget(item, callback) {
             item._id = (new Date()).getTime();
-            item.userId = userId;
             budgets.push(item);
-            callback(form);
+            callback(budgets);
         }
 
         function usersBudget(userId, callback) {

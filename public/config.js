@@ -24,7 +24,7 @@
             })
             .when("/createbudget", {
                 templateUrl: "views/register/createbudget.view.html",
-                controller: "RegisterController"
+                controller: "BudgetController"
             })
             .when("/home", {
                 templateUrl: "views/home.view.html"
